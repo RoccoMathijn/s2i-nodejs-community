@@ -19,8 +19,7 @@ set -e
 #npm link $module_list
 
 echo "---> Installing application source"
-pwd
-cp -Rf /tmp/src/address-service-ui ./
+cp -Rf /tmp/src/. ./
 
 if [ ! -z $HTTP_PROXY ]; then
 	echo "---> Setting npm http proxy to $HTTP_PROXY"
